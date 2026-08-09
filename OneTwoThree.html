@@ -1,0 +1,31 @@
+
+<!-- Mathematically calculated - on hover when margin decreases, the padding increases-->
+<button class="one">One</button>
+<button class="two">Two</button>
+<button class="three">Three</button>
+
+
+<style>
+    .one,
+    .two,
+    .three {
+        padding: 8px 20px;
+        background-color: green;
+        border-style: none;
+        color: white;
+        cursor: pointer;
+        margin-left: 20px;
+        margin-right: 20px;
+        transition: padding 0.15s,
+            margin 0.15s; 
+    }
+
+    .one:hover,
+    .two:hover,
+    .three:hover {
+        padding-left: 40px;
+        padding-right: 40px;
+        margin-left: 0px;
+        margin-right: 0px;
+    }
+</style>
