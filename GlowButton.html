@@ -1,0 +1,31 @@
+<button>Glow</button>
+
+<style>
+    button {
+  border: 2px solid #ccc;
+  background: white;
+  padding: 10px 20px;
+  border-radius: 8px;
+}
+
+button:active {
+  animation: borderGlow 0.5s ease-in-out;
+}
+
+@keyframes borderGlow {
+  0% {
+    border-color: #00aaff;
+    box-shadow: 0 0 0px #00aaff;
+  }
+
+  50% {
+    border-color: #00aaff;
+    box-shadow: 0 0 15px #00aaff;
+  }
+
+  100% {
+    border-color: #ccc;
+    box-shadow: 0 0 0px transparent;
+  }
+}
+</style>
