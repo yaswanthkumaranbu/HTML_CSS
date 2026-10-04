@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <title>Youtube</title>
     <style>
@@ -9,12 +10,37 @@
             object-fit:contain;
             object-position:top;
             border: 1px solid red; */
+            /* vertical-align: top; */
 
+        }
+        .search {
+            display: block;
+        }
+        .video-preview {
+            display: inline-block;
+            vertical-align:top;
+            width: 300px;
         }
     </style>
 </head>
+
 <body>
-    <img class="thumbnails" src="thumbnails/supersimpledev.webp" alt="">
-    <input type="text" placeholder="Search">
+    <input class="search" type="text" placeholder="Search">
+    <div class="video-preview">
+        <img class="thumbnails" src="thumbnails/supersimpledev.webp" alt="">
+        <p>HTML & CSS Full Course - Beginner to Pro
+        </p>
+        <p>SuperSimpleDev</p>
+        <p>2.5M views &middot; 1 year ago</p>
+    </div>
+    <div class="video-preview">
+        <img class="thumbnails" src="thumbnails/js.webp" alt="">
+        <p>
+            JavaScript Tutorial Full Course - Beginner to Pro
+        </p>
+        <p>SuperSimpleDev</p>
+        <p>9.7M views &middot; 2 year ago</p>
+    </div>
 </body>
+
 </html>
